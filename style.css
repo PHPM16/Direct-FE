@@ -1,0 +1,39 @@
+.contacts-section{
+    background: #f9f9f9;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.item{
+    display:flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.item_title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item_label{
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.item__value{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.item__footer{
+    font-size: 16px;
+    font-weight: 400;
+}
