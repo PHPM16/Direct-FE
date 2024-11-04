@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos para atualizar</title>
+    <title>Controle de estoque</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -11,11 +11,62 @@
 </head>
 <body>
     <header>
-        <h1>Contatos para atualizar</h1>
+        <h1>Controle de estoque de ímoveis - Direct Imobiliária.</h1>
+        <button class="header__add">
+            <a href="add_imovel.html">+</a>
+        </button>
     </header>
     <div id="container" class="contacts-section">
     </div>
-    
+    <aside id="edit" class="edit-sidebar">
+        <div class="edit-sidebar__content">
+            <div class="edit-sidebar__content__header">
+                <button id="closeSidebar" class="close-button"> X </button>
+            </div>
+            <form id="imovelForm">
+                <input type="hidden" id="imovel_id" name="id" disabled>
+                <div class="form__row">
+                    <label for="imovel_nome">Nome do Imóvel:</label>
+                    <input type="text" id="imovel_nome" name="imovel_nome" required>
+                </div>
+        
+                <div class="form__row">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" id="imovel_cliente" name="cliente" required>
+                </div>
+        
+                <div class="form__row">
+                    <label for="contato">Contato (Número de Telefone):</label>
+                    <input type="text" id="imovel_contato" name="contato" required>
+                </div>
+        
+
+                <div class="form__row">
+                    <label for="valor">Valor:</label>
+                    <input type="number" id="imovel_valor" name="valor" required>
+                </div>
+        
+                <div class="form__row">
+                    <label for="corretor">Corretor:</label>
+                    <input type="text" id="imovel_corretor" name="corretor" required>
+                </div>
+            <div class ="form__row">
+                <label for="status">Status do imóvel</label>
+                <div>
+                    <input type="radio" id="available" name="status" value="1">
+                    <span>Disponível</span><br>
+                </div>
+                <div>
+                    <input type="radio" id="unavailable" name="status" value="2">
+                    <span>Indisponível</span>
+                </div>
+            </div>
+        
+                <button type="submit">Editar Imóvel</button>
+            </form>
+        </div>
+    </aside>
     <script src="script.js"></script>
 </body>
 </html>
+
